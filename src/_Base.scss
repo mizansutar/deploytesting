@@ -1,0 +1,20 @@
+$text-color: #effffd;
+$background-color: #000000;
+$primary-color: #3498db;
+$secondary-color: #000201;
+
+$breakpoints-medium: 768px;
+$breakpoints-large: 1024px;
+$breakpoints-small: 480px;
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+
+    color: $text-color;
+    background-color: $background-color;
+    letter-spacing: 0.5px;
+    }

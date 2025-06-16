@@ -1,0 +1,30 @@
+@import "../../_Base.scss";
+
+.categoriesBar {
+  padding: 0 0.5rem 0;
+  font-size: 0.8rem;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+    margin-top: 0.5rem;
+  }
+  span{
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+
+    white-space: nowrap;
+    border: 1.5px solid red;
+    border-radius:5px;
+    &:hover{
+      cursor: pointer;
+      background-color: gray;
+    }
+    &:active{
+      background-color: lightgray;
+      border-color: aquamarine;
+    }
+  }
+}

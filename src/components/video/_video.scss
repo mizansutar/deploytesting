@@ -1,0 +1,67 @@
+@import '../../_Base.scss';
+
+.video 
+{
+    background-color: #000000;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+
+    font-weight: 600;
+    font-size: 12px;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+
+.video__Top{
+    margin-bottom: 0.5rem;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    span{
+        position: absolute;
+
+        bottom: 0.3rem;
+        right: 0.3rem;
+
+        padding: 0.2rem;
+        background-color: black;
+        border: 0.2px solid gray;
+        border-radius: 3px;
+
+    }
+}
+.Video__title{
+    margin-bottom: 0.1rem;
+    color: wheat;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+
+}
+.Video__details{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.Video__chanel{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    img{
+        width: 36px;
+        height: 36px;
+
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}
+
+
+}

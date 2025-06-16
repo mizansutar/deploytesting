@@ -1,0 +1,104 @@
+/* _header.scss */
+@import '../../_Base.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background-color: $secondary-color;
+  color: $text-color;
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__menu {
+    display: none;
+    cursor: pointer;
+    color: $text-color;
+  }
+
+  &__logo {
+    height: 25px;
+    object-fit: contain;
+  }
+
+  &__searchForm {
+    display: flex;
+    flex: 0.6;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 40px;
+    padding: 0.3rem 0.5rem;
+    background-color: transparent;
+
+    input {
+      flex: 1;
+      border: none;
+      padding: 0.4rem;
+      background: transparent;
+      color: $text-color;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      border: none;
+      background: transparent;
+      color: $text-color;
+      cursor: pointer;
+      padding: 0 0.5rem;
+    }
+
+    .header__mic {
+      margin-left: 0.5rem;
+      color: $text-color;
+      cursor: pointer;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .header__avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__menu {
+      display: block;
+    }
+
+    &__searchForm {
+      flex: 1 1 100%;
+      margin: 0.5rem 0;
+    }
+
+    &__icons {
+      justify-content: flex-end;
+      width: 100%;
+    }
+  }
+}
