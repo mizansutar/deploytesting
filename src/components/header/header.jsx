@@ -1,8 +1,8 @@
 
 import React from 'react';
 import './_header.scss';
-import { AiOutlineSearch, AiOutlineAudio } from 'react-icons/ai';
-import { MdNotifications, MdApps } from 'react-icons/md';
+import { AiOutlineSearch, AiOutlineAudio } from 'react-icons';
+import { MdNotifications, MdApps } from 'react-icons';
 import { FaBars } from 'react-icons/fa';
 
 const Header = () => {
